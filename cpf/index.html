@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"></a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Validador CPF</title>
+</head>
+
+<body>
+    <div class=" tudo">
+    <div class="top">
+        <h3>Validador de CPF</h3>
+
+        <span> O objetivo deste projeto é criar um Validador de CPF com JavaScript </span>
+        <br>
+        <span> Adicione somente números. </span>
+    </div>
+    <form>
+        <div class="validador">
+            <input type="text" class="campo_digitacao" name="CPF" placeholder="Digite seu CPF" id="cpf_digitado" maxlength="11"> <br>
+            <button type="button" class="botao" onclick="validacao()"> Validar </button>
+        </div>
+    </form>
+    <div class="container page-header">
+        <div id="success" class="alert alert-success" style="display: none;" role="alert">
+            Oba! Seu CPF é válido
+        </div>
+        <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+            Ops! Seu CPF não é válido
+        </div>
+    </div>    
+</body>
+<script src="script.js"></script>
+
+</html>
